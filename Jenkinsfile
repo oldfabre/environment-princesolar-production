@@ -7,6 +7,7 @@ pipeline {
   }
   environment {
     DEPLOY_NAMESPACE = "jx-production"
+    CHART_REPOSITORY = "https://fr1cslfcglo0082.misys.global.ad/chartmuseum"
   }
   stages {
     stage('Validate Environment') {
