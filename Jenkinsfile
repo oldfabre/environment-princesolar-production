@@ -14,7 +14,7 @@ pipeline {
       steps {
         container('maven') {
           dir('env') {
-            sh 'jx step helm build'
+            sh 'CHART_REPOSITORY="https://fr1cslfcglo0082.misys.global.ad/chartmuseum" jx step helm build'
           }
         }
       }
